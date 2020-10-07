@@ -1,0 +1,14 @@
+#check powershell version
+$psversiontable 
+
+#map a drive in windows explorer
+
+net use z: \\server-r2\c$
+
+#map a psdrive
+
+new-psdrive -name demo -psprovider filesystem -root c:\demo
+
+help about_commonparameters
+
+help about_preference_variables
